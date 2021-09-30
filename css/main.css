@@ -1,0 +1,187 @@
+html {
+  font-size: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: relative;
+}
+nav ul {
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+  position: absolute;
+}
+nav ul > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-right: 40px;
+  transition: all 0.3s ease 0s;
+}
+
+.hero,
+.person1,
+.person2,
+.person3,
+.person4,
+.name,
+.img,
+.info,
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  background-image: url(../images/background/negative-space-black-forest-dawn.jpg);
+  height: 926px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero h2 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 30px;
+}
+.hero .hero-text {
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.person1,
+.person2,
+.person3,
+.person4 {
+  height: auto;
+  width: 100%;
+}
+.person1 .name,
+.person2 .name,
+.person3 .name,
+.person4 .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+.person1 .img > img,
+.person2 .img > img,
+.person3 .img > img,
+.person4 .img > img {
+  width: 60%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.person1 .info,
+.person2 .info,
+.person3 .info,
+.person4 .info {
+  height: 150px;
+  width: 80%;
+  padding: 40px;
+  font-size: 1.5rem;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.person1 .fas,
+.person2 .fas,
+.person3 .fas,
+.person4 .fas {
+  font-size: 2.5rem;
+  margin-right: 5px;
+}
+
+footer {
+  background-color: black;
+  height: 600px;
+  margin-top: 60px;
+}
+footer .adress,
+footer .contact-info,
+footer .social-media > li > a {
+  margin: 30px;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  font-size: 2.5rem;
+  line-height: 50px;
+}
+footer .fab {
+  color: white;
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .name,
+.img,
+.info {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+  }
+
+  .person1,
+.person2,
+.person3,
+.person4 {
+    width: 50%;
+  }
+
+  .person1,
+.person3 {
+    float: left;
+  }
+
+  .name {
+    font-size: 4.5rem;
+    font-weight: lighter;
+  }
+
+  .img {
+    width: 80%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 225px;
+  }
+
+  .adress,
+.contact-info,
+.social-media > li > a {
+    font-size: 1.7rem;
+    line-height: 60px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
