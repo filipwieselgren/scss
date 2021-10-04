@@ -15,19 +15,23 @@
     <nav>
       <ul>
         <li><a href="#">Hem</a></li>
-        <li><a href="#">Om</a></li>
-        <li><a href="#">Kontakt</a></li>
+        <li><a href="#about">Om</a></li>
+        <li><a href="#contact">Kontakt</a></li>
       </ul>
     </nav>
     <main>
-      <section class="hero">
+      <section class="hero" title="Picture of a forrest">
         <h2>Welcome to nature</h2>
         <div class="hero-text">A journey trough time and sheep</div>
         <div class="hero-text"
           >To see how ...cotten ... is mage, made I mean...
+          <a href="#about"><i class="fas fa-arrow-circle-down"></i></a>
+               
         </div>
+     
+          
       </section>
-      <h1>Träffa laget</h1>
+      <h1 id="about">Träffa laget</h1>
       <section class="person1">
         <div class="name">Rakib</div>
         <div class="img">
@@ -63,7 +67,9 @@
           />
         </div>
         <div class="info">
-          <div class="info-text"> <i class="fas fa-quote-right"></i>Gör överiga saker... mestadels ... </div>
+          <div class="info-text"> 
+            <i class="fas fa-quote-right"></i>Gör överiga saker... mestadels ... 
+          </div>
         </div>
       </section>
       <section class="person4">
@@ -78,30 +84,35 @@
           <div class="info-text">
             <i class="fas fa-quote-right"></i>En av våra utbildare som har stor erfarenhet av ganska många saker
           </div>
-        </div>
+        </div>   
       </section>
+      <div id="pointer-bottom">
+        <a href="#contact"><i class="fas fa-arrow-circle-down"></i></a> 
+      </div>   
     </main>
     <footer>
-      <ul class="adress">
-        <li>Tegel Consulting AB</li>
-        <li>Agatvägen 18</li>
-        <li>168 60 Bromma</li>
-      </ul>
-      <ul class="contact-info">
-        <li>info at tegelconsulting.se</li>
-        <li>070-123 456 78</li>
-      </ul>
-      <ul class="social-media">
-        <li
-          ><i class="fab fa-instagram"></i></ion-icon
-          ><a href="#">Instagram</a></li
-        >
-        <li
-          ><i class="fab fa-twitter"></i></ion-icon
-          ><a href="#">Twitter</a></li
-        >
-        <li><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></li>
-      </ul>
+      <div id="contact" class="footer-info">
+        <ul class="adress">
+          <li>Tegel Consulting AB</li>
+          <li>Agatvägen 18</li>
+          <li>168 60 Bromma</li>
+        </ul>
+        <ul class="contact-info">
+          <li>info at tegelconsulting.se</li>
+          <li>070-123 456 78</li>
+        </ul>
+        <ul class="social-media">
+          <li
+            ><i class="fab fa-instagram"></i></ion-icon
+            ><a href="#">Instagram</a></li
+          >
+          <li
+            ><i class="fab fa-twitter"></i></ion-icon
+            ><a href="#">Twitter</a></li
+          >
+          <li><i class="fab fa-facebook-f"></i><a href="#">Facebook</a></li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

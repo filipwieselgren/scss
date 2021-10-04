@@ -28,7 +28,10 @@ nav {
     color: white;
     font-size: 1.5rem;
     margin-right: 40px;
-    transition: all 0.3s ease 0s;
+  }
+
+  ul > li > a:hover {
+    text-decoration: underline white;
   }
 }
 .hero,
@@ -38,8 +41,7 @@ nav {
 .person4,
 .name,
 .img,
-.info,
-footer {
+.info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,6 +69,15 @@ footer {
     text-align: center;
     width: 80%;
     margin: 30px;
+    position: relative;
+  }
+
+  .fa-arrow-circle-down {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    color: white;
+    font-size: 2rem;
   }
 }
 
@@ -107,25 +118,53 @@ h1 {
     border-radius: 5px;
     margin-top: 30px;
   }
-  .fas {
+  .fa-quote-right {
     font-size: 2.5rem;
     margin-right: 5px;
   }
 }
+#pointer-bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#pointer-bottom > a {
+  font-size: 2rem;
+  color: black;
+}
 
 footer {
   background-color: black;
-  height: 600px;
+  height: 700px;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
   .adress,
   .contact-info,
-  .social-media > li > a {
+  .social-media > li > a,
+  .fab {
     margin: 30px;
     color: white;
     text-decoration: none;
     list-style: none;
     font-size: 2.5rem;
+    line-height: 30px;
+  }
+
+  .adress,
+  .contact-info,
+  .social-media > li > a {
     line-height: 50px;
   }
 
@@ -166,20 +205,30 @@ footer {
   }
 
   .info {
-    width: 30%;
+    width: 50% !important;
   }
 
   footer {
+    height: 425px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 225px;
+    width: 100%;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .adress,
   .contact-info,
-  .social-media > li > a {
+  .social-media > li > a,
+  .fab {
     font-size: 1.7rem;
     line-height: 60px;
   }

@@ -27,7 +27,9 @@ nav ul > li > a {
   color: white;
   font-size: 1.5rem;
   margin-right: 40px;
-  transition: all 0.3s ease 0s;
+}
+nav ul > li > a:hover {
+  text-decoration: underline white;
 }
 
 .hero,
@@ -37,8 +39,7 @@ nav ul > li > a {
 .person4,
 .name,
 .img,
-.info,
-footer {
+.info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,6 +66,14 @@ footer {
   text-align: center;
   width: 80%;
   margin: 30px;
+  position: relative;
+}
+.hero .fa-arrow-circle-down {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  color: white;
+  font-size: 2rem;
 }
 
 h1 {
@@ -110,27 +119,54 @@ h1 {
   border-radius: 5px;
   margin-top: 30px;
 }
-.person1 .fas,
-.person2 .fas,
-.person3 .fas,
-.person4 .fas {
+.person1 .fa-quote-right,
+.person2 .fa-quote-right,
+.person3 .fa-quote-right,
+.person4 .fa-quote-right {
   font-size: 2.5rem;
   margin-right: 5px;
 }
 
+#pointer-bottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#pointer-bottom > a {
+  font-size: 2rem;
+  color: black;
+}
+
 footer {
   background-color: black;
-  height: 600px;
+  height: 700px;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 footer .adress,
 footer .contact-info,
-footer .social-media > li > a {
+footer .social-media > li > a,
+footer .fab {
   margin: 30px;
   color: white;
   text-decoration: none;
   list-style: none;
   font-size: 2.5rem;
+  line-height: 30px;
+}
+footer .adress,
+footer .contact-info,
+footer .social-media > li > a {
   line-height: 50px;
 }
 footer .fab {
@@ -168,17 +204,31 @@ footer .fab {
     width: 80%;
   }
 
+  .info {
+    width: 50% !important;
+  }
+
   footer {
+    height: 425px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    height: 225px;
+    width: 100%;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .adress,
 .contact-info,
-.social-media > li > a {
+.social-media > li > a,
+.fab {
     font-size: 1.7rem;
     line-height: 60px;
   }
