@@ -49,7 +49,7 @@ nav ul > li > a:hover {
 
 .hero {
   background-image: url(../images/background/negative-space-black-forest-dawn.jpg);
-  height: 926px;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
