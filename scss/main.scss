@@ -75,8 +75,9 @@ nav {
 
   .fa-arrow-circle-down {
     position: absolute;
-    top: 350px;
+    top: 250px;
     left: 50%;
+    transform: translate(-50%);
     color: white;
     font-size: 2rem;
   }
